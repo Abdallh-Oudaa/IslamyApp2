@@ -1,3 +1,4 @@
+
 import 'package:apptest/homeScreen.dart';
 import 'package:flutter/material.dart';
 
@@ -10,7 +11,10 @@ class myApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return  MaterialApp(
-      home: home_screen(),
+     initialRoute:home_screen.routName ,
+     routes: {
+        home_screen.routName:(context) => home_screen(),
+     },
     );
   }
 }
