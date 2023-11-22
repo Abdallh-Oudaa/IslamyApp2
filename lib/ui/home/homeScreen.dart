@@ -25,11 +25,12 @@ class _HomeScreenState extends State<HomeScreen> {
               fit: BoxFit.cover),
         ),
         child: Scaffold(
-          //backgroundColor: Colors.transparent,
+          backgroundColor: Colors.transparent,
           appBar: AppBar(
             elevation: 0,
             backgroundColor: Colors.transparent,
-            title: const Center(child: Text("Islamy")),
+            title:const  Center(child: Text("Islamy",style:TextStyle(
+            color: Colors.black, fontSize: 30, fontWeight: FontWeight.w700),)),
           ),
           bottomNavigationBar: BottomNavigationBar(
             currentIndex: selectedItem,
@@ -68,9 +69,9 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   List<Widget> taps = [
-    const QuranTap(),
-    const HadesTap(),
-    const SebhaTap(),
-    const RadioTap(),
+         QuranTap(),
+         HadesTap(),
+         SebhaTap(),
+         RadioTap(),
   ];
 }

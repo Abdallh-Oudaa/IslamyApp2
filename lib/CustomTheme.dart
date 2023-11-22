@@ -13,5 +13,6 @@ class CustomTheme {
     scaffoldBackgroundColor: Colors.transparent,
     colorScheme: ColorScheme.fromSeed(
         seedColor: const Color(0xFFB7935F), primary: const Color(0xFFB7935F)),
+        useMaterial3: false,
   );
 }
